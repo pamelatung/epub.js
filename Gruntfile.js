@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 					'sourceRoot': '../'
 				},
       	files: {
-					'build/epub.js': ['<banner>', 'node_modules/rsvp/dist/rsvp.js', 'src/*.js',  'libs/mime-types/mime-types.js'],
+					'build/epub.js': ['<banner>', 'src/*.js',  'libs/mime-types/mime-types.js'],
 					'build/reader.js': ['<banner>', 'reader_src/reader.js', 'reader_src/controllers/*.js'],
 					'build/hooks.js': ['<banner>', 'hooks/default/*.js']
 				}
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 						sourceMap: false
 				},
 				files: {
-					'build/epub.min.js': ['<banner>', 'node_modules/rsvp/dist/rsvp.js', 'src/*.js',  'libs/mime-types/mime-types.js'],
+					'build/epub.min.js': ['<banner>', 'src/*.js',  'libs/mime-types/mime-types.js'],
 					'build/reader.min.js': ['<banner>', 'reader_src/reader.js', 'reader_src/controllers/*.js'],
 					'build/hooks.min.js': ['<banner>', 'hooks/default/*.js']
 				}
